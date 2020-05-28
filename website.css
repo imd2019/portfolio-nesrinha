@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+.leiste {
+  text-decoration: none;
+  display: inline;
+  color: #161516;
+  list-style: none;
+  padding: 6px;
+  justify-content: space-between;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  color: #201e20;
+  font-family: fantasy;
+  list-style-type: none;
+}
+
+body {
+  background-color: grey;
+}
+
+.Me {
+  width: 25%;
+  height: auto;
+  position: absolute;
+  left: 67%;
+  top: 10%;
+}
+
+#Homepage {
+  height: 130px;
+  width: 100%;
+  background: grey;
+}
+
+.Bio {
+  color: lightpink;
+  font-family: fantasy;
+}
+
+p {
+  font-family: fantasy;
+}
+
+ul#navigation {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+ul#navigation li {
+  padding: 0px;
+  margin: 5px;
+  width: 150px;
+}
+
+ul#navigation li a:link {
+  display: block;
+  border: 1px solid #000;
+  background-color: #7a747a;
+  padding: 10px;
+  color: #000;
+  font-family: fantasy;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+ul#navigation li a:hover {
+  display: block;
+  border: 1px solid #ebf5e8;
+  background-color: lightpink;
+  color: #fff;
+}
+
+.ich {
+  width: 5%;
+  height: auto;
+  position: absolute;
+  left: 73%;
+  top: 20%;
+}
