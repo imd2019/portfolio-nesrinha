@@ -1,0 +1,391 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+.leiste {
+  text-decoration: none;
+  display: inline;
+  color: #161516;
+  list-style: none;
+  padding: 6px;
+  justify-content: space-between;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
+}
+.grid > div {
+  background: lightpink;
+  padding: 1rem;
+}
+
+.grid > div ::before {
+  content: "";
+  padding-top: 100%;
+  display: block;
+}
+
+.grid > div > img {
+  width: 100%;
+}
+
+body {
+  margin: 2rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  color: #201e20;
+  font-family: Graphik Compact;
+  list-style-type: none;
+}
+
+body {
+  background-color: rgb(199, 199, 199);
+}
+
+.Me {
+  width: 25%;
+  height: auto;
+  position: absolute;
+  left: 67%;
+  top: 10%;
+}
+
+#Homepage {
+  height: 130px;
+  width: 100%;
+  background: rgb(199, 199, 199);
+}
+
+.Bio {
+  color: black;
+  font-family: Graphik Compact;
+}
+
+p {
+  font-family: Graphik Compact;
+}
+/* 
+ul#navigation {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+ul#navigation li {
+  padding: 0px;
+  margin: 5px;
+  width: 150px;
+}
+
+ul#navigation li a:link {
+  display: block;
+  border: 1px solid #000;
+  background-color: grey;
+  padding: 10px;
+  color: #000;
+  font-family: Graphik Compact;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+ul#navigation li a:hover {
+  display: block;
+  border: 1px solid #ebf5e8;
+  background-color: lightpink;
+  color: #fff;
+} */
+
+.ich {
+  width: 35%;
+  height: auto;
+  position: absolute;
+  left: 60%;
+  top: 20%;
+}
+
+.flex-container {
+  display: flex;
+
+  flex-flow: row wrap;
+
+  justify-content: space-around;
+
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.flex-item {
+  background: rgb(199, 199, 199);
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+/*Portfolio*/
+.header {
+  background: rgb(199, 199, 199);
+}
+
+.footer {
+  background: lightpink;
+}
+
+.main {
+  text-align: left;
+  background: rgb(199, 199, 199);
+}
+
+.aside-1 {
+  background: lightpink;
+}
+
+.aside-2 {
+  background: lightpink;
+}
+
+@media all and (min-width: 600px) {
+  .aside {
+    flex: 1 0 0;
+  }
+}
+
+@media all and (min-width: 800px) {
+  .main {
+    flex: 3 0px;
+  }
+  .aside-1 {
+    order: 1;
+  }
+  .main {
+    order: 2;
+  }
+  .aside-2 {
+    order: 3;
+  }
+
+  body {
+    padding: 2em;
+  }
+
+  .navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+
+    list-style: none;
+    margin: 0;
+    background: rgb(199, 199, 199);
+  }
+
+  .navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
+  }
+
+  .navigation a:hover {
+    background: lightpink;
+  }
+
+  @media all and (max-width: 800px) {
+    .navigation {
+      justify-content: space-around;
+    }
+  }
+
+  @media all and (max-width: 600px) {
+    .navigation {
+      flex-flow: column wrap;
+      padding: 0;
+    }
+    .navigation a {
+      text-align: center;
+      padding: 10px;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .navigation li:last-of-type a {
+      border-bottom: none;
+    }
+  }
+
+  main {
+    min-height: 100vh;
+
+    background: rgb(199, 199, 199);
+
+    position: relative;
+    z-index: 1;
+
+    font: 16px/1.4 system-ui, sans-serif;
+    padding: 2rem;
+  }
+  footer {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    background: lightpink;
+    display: grid;
+    place-items: center;
+    padding: 100px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+  }
+  p {
+    max-width: 600px;
+    margin: 0 auto 1rem;
+  }
+
+  /*AboutMe*/
+
+  .wrapper1 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .wrapper1 > div {
+    background: #eee;
+    padding: 1em;
+  }
+  .wrapper1 > div:nth-child(ood) {
+    background: #ddd;
+  }
+
+  .header {
+    padding: 30px;
+    text-align: center;
+    background: white;
+  }
+  .header h1 {
+    font-size: 50px;
+  }
+
+  .projects {
+    width: 90vw;
+    height: 90vh;
+    margin: 5vh auto 5vh auto;
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 25%, 25%, 25%, 25%;
+    grid-gap: 1rem;
+    grid-template-areas:
+      "box1 box1 box2 box3"
+      "box1 box1 box4 box3"
+      "box5 box6 box7 box7"
+      "box8 box8 box9 box10";
+  }
+
+  .projects .grid-box {
+    background: lightpink;
+    transition: 250ms;
+    font-size: 5rem;
+    color: white;
+    font-family: sans-serif;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0, 12), 0 1px 2px,
+      rgba(0, 0, 0, 0, 24);
+    animation: fadein 1s ease-out normal backwards;
+  }
+
+  .projects .grid-box:hover {
+    box-shadow: 0 1.5rem 2.8rem rgba(0, 0, 0, 0.15),
+      0 1rem 1rem rgba(0, 0, 0, 0.15);
+    transform: translate(0, -0.5rem) scale(1.01);
+  }
+
+  .projects .element1 {
+    grid-area: box1;
+    animation-delay: 0;
+  }
+  .projects .element2 {
+    grid-area: box2;
+    animation-delay: 100ms;
+  }
+  .projects .element3 {
+    grid-area: box3;
+    animation-delay: 200ms;
+  }
+  .projects .element4 {
+    grid-area: box4;
+    animation-delay: 200ms;
+  }
+  .projects .element5 {
+    grid-area: box5;
+    animation-delay: 100ms;
+  }
+  .projects .element6 {
+    grid-area: box6;
+    animation-delay: 200ms;
+  }
+  .projects .element7 {
+    grid-area: box7;
+    animation-delay: 300ms;
+  }
+  .projects .element8 {
+    grid-area: box8;
+    animation-delay: 200ms;
+  }
+  .projects .element9 {
+    grid-area: box9;
+    animation-delay: 400ms;
+  }
+  .projects .element10 {
+    grid-area: box10;
+    animation-delay: 500ms;
+  }
+
+  @keyframes fadein {
+    0% {
+      transform: scale(0);
+    }
+    70% {
+      transform: scale(1.03);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}
